@@ -21,3 +21,15 @@ Steps to accomplish this app:
         - index, new, edit, show
     - created a form partials
     - added flash messages: remember to add display to the application.html
+6. Testing
+    - Error: can't find partial
+        - cause: typo missing _ in _form
+    - Error: delete does not delete
+        - cause:  @rails/ujs is not properly loaded, so Rails’ JavaScript helpers for method: :delete, data-confirm, don’t work.
+        - fix: Make sure @rails/ujs is pinned correctly in config/importmap.rb and started in application.js
+    - Error: importmap integrity mismatch
+        - cause: The integrity hash for the downloaded file doesn't match what’s listed in your importmap file. This can happen because/after: 
+            Manually editing the importmap
+            Rails upgrading/changing asset versions
+            Corrupted or outdated asset files
+        - fix: re-pin the package
