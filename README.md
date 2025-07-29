@@ -16,3 +16,8 @@ Steps to accomplish this app:
     - :kittens routes with RESTful actions
     - set routes
 --commit 2--
+5. update the kitten controller with the right restful action methods
+    - set up views 
+        - index, new, edit, show
+    - created a form partials
+    - added flash messages: remember to add display to the application.html
