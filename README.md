@@ -33,3 +33,6 @@ Steps to accomplish this app:
             Rails upgrading/changing asset versions
             Corrupted or outdated asset files
         - fix: re-pin the package
+7. JSON API
+    - Error: KittensController does not support JSON 
+        - fix: added respond_to, to index on kittens_controller
